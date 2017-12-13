@@ -1,24 +1,19 @@
-# README
+# This is a Demo App for Heroku Deployment of a Rails app via Travis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Plain Heroku Deployment
 
-Things you may want to cover:
+### First step: start with heroku deployment from command line
 
-* Ruby version
+Followed the guide at:
+https://devcenter.heroku.com/articles/getting-started-with-rails5
 
-* System dependencies
+At the very least it is necessary to add the pg gem only to production group,
+and adapt config/database.yml to use pg in production. Then run:
 
-* Configuration
+    heroku login
+    heroku create
+    git push heroku master
+    heroku run rails db:migrate
+    heroku open
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The name of my app is [secret-basin-23674](https://secret-basin-23674.herokuapp.com/).

@@ -2,6 +2,8 @@
 
 ## Plain Heroku Deployment
 
+Requirements: install [Heroku CLI (command line interface)](https://devcenter.heroku.com/articles/heroku-cli)
+
 ### First step: start with heroku deployment from command line
 
 Followed the guide at:
@@ -17,3 +19,15 @@ and adapt config/database.yml to use pg in production. Then run:
     heroku open
 
 The name of my app is [secret-basin-23674](https://secret-basin-23674.herokuapp.com/).
+
+## Heroku Deployment after an successfull travis build
+
+To be able to deploy to your heroku account, travis needs your Heroku API key.
+This can be done by adding it encrypted to the .travis.yml, which is automatically
+done with
+
+    gem install travis
+    travis encrypt $(heroku auth:token) --add deploy.api_key
+
+and further changes to .travis.yml as described in
+[https://docs.travis-ci.com/user/deployment/heroku/](https://docs.travis-ci.com/user/deployment/heroku/)

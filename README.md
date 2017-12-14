@@ -1,4 +1,5 @@
 # This is a Demo App for Heroku Deployment of a Rails app via Travis
+[![Build Status](https://travis-ci.org/bkleinen/notes-deploy.svg?branch=master)](https://travis-ci.org/bkleinen/notes-deploy)
 
 ## Plain Heroku Deployment
 

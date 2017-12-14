@@ -31,3 +31,5 @@ done with
 
 and further changes to .travis.yml as described in
 [https://docs.travis-ci.com/user/deployment/heroku/](https://docs.travis-ci.com/user/deployment/heroku/)
+
+The app deployed by heroku: [https://rocky-everglades-35483.herokuapp.com](https://rocky-everglades-35483.herokuapp.com)
